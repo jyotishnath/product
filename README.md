@@ -11,6 +11,7 @@ yarn dev
 # or
 pnpm dev
 ```
+#Do refresh the page while testing on mobile for the smooth performance
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
