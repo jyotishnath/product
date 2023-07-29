@@ -20,3 +20,105 @@ body {
   color: rgb(var(--foreground-rgb));
   font-family: 'Roboto', sans-serif;
 }
+
+
+/* styles.css (or any other CSS file) */
+
+.first-column {
+  flex: 1;
+  height: 1600px;
+  background-color: aquamarine;
+}
+
+.second-column {
+  flex: 1;
+  /* Add other styles for the second column */
+}
+
+.sticky {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  align-self: flex-start;
+  top: 0;
+}
+
+.p_image img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.productGallery::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-image: url(/icons/Heart.svg);
+  width: 20px;
+  height: 18px;
+}
+
+.p_thumb {
+  width: 50px;
+  height: 70px;
+}
+
+.addToCart span::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -30px;
+  background-image: url(/icons/Arrow.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 14px;
+}
+
+.strike::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 1px solid;
+  transform: rotate(344deg);
+  width: 30px;
+  margin: 0 auto;
+  -webkit-transform: rotate(344deg);
+  -moz-transform: rotate(344deg);
+  -ms-transform: rotate(344deg);
+  -o-transform: rotate(344deg);
+}
+
+button[disabled] {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.editor::before {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  background-color: black;
+  margin-left: -36px;
+}
+
+.slick-dots li button:before {
+  color: transparent !important;
+  font-size: 6px !important;
+  background: #000 !important;
+  height: 2px !important;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}

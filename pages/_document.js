@@ -5,6 +5,7 @@ export default function Document() {
 	return (
 		<Html>
 			<Head>				
+                <link rel="icon" type="image/x-icon" href="../app/favicon.ico" />
 				<meta NAME="robots" CONTENT="noindex,nofollow" />
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
